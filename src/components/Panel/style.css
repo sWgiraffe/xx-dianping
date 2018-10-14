@@ -1,0 +1,59 @@
+.Panel-wrap {
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  height: 78px;
+}
+.Panel-wrap .panel-block {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 2px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.Panel-wrap .panel-block .panel-item1 {
+  position: relative;
+  background-color: #ffa383;
+  display: block;
+  height: 100%;
+  padding-left: 16px;
+}
+.Panel-wrap .panel-block .panel-item1 .title {
+  font-size: 16px;
+  padding: 12px 0 2px;
+}
+.Panel-wrap .panel-block .panel-item1 .description {
+  background-color: #f97e54;
+  width: 75px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 12px;
+  padding: 2px;
+  margin-left: -4px;
+}
+.Panel-wrap .panel-block .panel-item2 {
+  position: relative;
+  background-color: #44d0cd;
+  height: 100%;
+  display: block;
+  padding-left: 16px;
+}
+.Panel-wrap .panel-block .panel-item2 .title {
+  font-size: 16px;
+  padding: 12px 0 2px;
+}
+.Panel-wrap .panel-block .panel-item2 .description {
+  background-color: #22bab7;
+  width: 75px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 12px;
+  padding: 2px;
+  margin-left: -4px;
+}
+.Panel-wrap .panel-block .img{
+  position: absolute;
+  right: 6px;
+  top: 7px;
+}

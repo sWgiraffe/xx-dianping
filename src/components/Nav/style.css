@@ -1,0 +1,28 @@
+.Nav-wrap {
+  padding-top: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+.Nav-wrap .nav-row{
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Nav-wrap .nav-selector{
+  list-style: none;
+  padding: 0;
+  line-height: 10px;
+  margin: 10px;
+}
+.Nav-wrap .nav-selector .circle{
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ccc;
+  display: inline-block;
+  margin-right: 6px;
+}
+.Nav-wrap .nav-selector .on{
+  background-color: #f5734b;
+}
