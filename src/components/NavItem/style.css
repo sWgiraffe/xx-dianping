@@ -1,0 +1,11 @@
+.nav-item {
+  padding: 13px 0 0;
+  text-align: center;
+}
+.nav-item .nav-item-img {
+  width: 44px;
+  height: 44px;
+}
+.nav-item .nav-item-icontext {
+  font-size: 13px;
+}
