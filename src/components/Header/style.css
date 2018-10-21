@@ -1,4 +1,5 @@
 .Header-wrap {
+  z-index: 1;
   position: fixed;
   height: 50px;
   width: 100%;
@@ -11,6 +12,7 @@
   display: -webkit-box;
 }
 .Header-wrap > .city {
+  font-size: 14px;
   max-width: 60px;
   padding-right: 17px;
   white-space: nowrap;

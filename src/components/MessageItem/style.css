@@ -1,0 +1,28 @@
+.MessageItem-wrap {
+  width: 32%;
+}
+.MessageItem-wrap .itemName {
+  font-size: 16px;
+  padding-top: 3px;
+  color: #000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MessageItem-wrap .curPrice {
+  color: #f63;
+  text-decoration: none;
+  font-size: 20px;
+}
+.MessageItem-wrap .curPrice::before{
+  content: '\A5';
+  font-size: 14px;
+}
+.MessageItem-wrap .oldPrice {
+  color: #999;
+  font-size: 12px;
+  margin-left: 2px;
+  text-decoration: line-through;
+}
+.MessageItem-wrap .oldPrice::before{
+  content: '\A5';
+}

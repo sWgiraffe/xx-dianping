@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Panel from '../components/Panel';
+import MessageBoard from '../components/MessageBoard';
+import ScrollList from '../components/ScrollList';
 
 class App extends Component {
   render() {
@@ -30,10 +32,13 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Nav data={fakeNavData} size={2} cur={1}/>
-        <div style={{'height': '10px','background-color': '#f0f0f0'}}></div>
+        <Nav data={fakeNavData} size={3} />
+        <div style={{'height': '10px','backgroundColor': '#f0f0f0'}}></div>
         <Panel />
-        <div style={{'height': '10px','background-color': '#f0f0f0'}}></div>
+        <div style={{'height': '10px','backgroundColor': '#f0f0f0'}}></div>
+        <MessageBoard />
+        <div style={{'height': '10px','backgroundColor': '#f0f0f0'}}></div>
+        <ScrollList />
       </div> 
     );
   }
