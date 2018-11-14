@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import NavItem from '../NavItem';
 import './style.css';
 
-class Nav extends Component {
+class Nav extends PureComponent {
   static defaultProps = {
     size: 1
   }
@@ -189,7 +189,7 @@ class Nav extends Component {
       delay2,
       delay3,
     } = this.state;
-    const items = this._renderItem(data);
+    const items = data.map(item => this._renderItem(item));
     const selector = this._renderSelector(size, cur);
     const width = document.body.clientWidth;
     return (
@@ -201,16 +201,16 @@ class Nav extends Component {
           onTouchEnd={e => this._touchEnd(e)}
         >
           <div className="nav-group" style={{width: width, left: '0', transform: `translate(${translate1}px)`, transitionDuration: `${delay1}ms`}}>
-            <div className="nav-row">{items}</div>
-            <div className="nav-row">{items}</div>
+            <div className="nav-row">{items[0]}</div>
+            <div className="nav-row">{items[1]}</div>
           </div>
           <div className="nav-group" style={{width: width, left: 0 - width, transform: `translate(${translate2}px)`, transitionDuration: `${delay2}ms`}}>
-            <div className="nav-row">{items}</div>
-            <div className="nav-row">{items}</div>
+            <div className="nav-row">{items[0]}</div>
+            <div className="nav-row">{items[1]}</div>
           </div>
           <div className="nav-group" style={{width: width, left: 0 - 2 * width, transform: `translate(${translate3}px)`, transitionDuration: `${delay3}ms`}}>
-            <div className="nav-row">{items}</div>
-            <div className="nav-row">{items}</div>
+            <div className="nav-row">{items[0]}</div>
+            <div className="nav-row">{items[1]}</div>
           </div>
         </div>
         <ul className="nav-selector">{selector}</ul>

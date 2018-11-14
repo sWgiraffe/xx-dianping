@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import MessageItem from '../MessageItem';
 import './style.css';
 
-class MessageBoard extends Component {
+class MessageBoard extends PureComponent {
   render() {
     return (
       <div className="MessageBoard-wrap">

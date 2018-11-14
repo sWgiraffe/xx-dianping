@@ -2,17 +2,14 @@ import React, { Component } from 'react';
 import './style.css';
 
 class Header extends Component {
+  static defaultProps = {
+    backgroundColor: '#fff'
+  }
+  
   render() {
     return (
-      <div className="Header-wrap">
-        <a className="city">成都</a>
-        <div className="search">
-          输入商户名、地点
-        </div>
-        <a className="mywrap">
-          <div className="my">
-          </div>
-        </a>
+      <div className="Header" style={{backgroundColor: this.props.backgroundColor}}>
+        {this.props.children}
       </div>
     );
   }

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './style.css';
 
-class Panel extends Component {
+class Panel extends PureComponent {
   render() {
     return (
       <div className="Panel-wrap">
