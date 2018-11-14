@@ -5,6 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '/public/build'),
     filename: 'bundle.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -31,5 +32,6 @@ module.exports = {
   devServer: {
     contentBase: './public',
     port: '8080',
+    historyApiFallback: true
   }
 }
